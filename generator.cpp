@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int id = 0; pair <int, string> name_fold[10000001];
-string a[10000001]; void process_subtask();
+string aaaaaaa[10000001]; void process_subtask();
 void dang_ki_subtask (int iTest, string subtask) {
     name_fold[++id] = {iTest, subtask}; return;}
 #ifndef GENERATOR
@@ -30,7 +30,7 @@ namespace Gen
 
     void gen (int iTest)
     {
-        Gen :: regis(); if (id > 0) regis_subtask(a[iTest]);
+        Gen :: regis(); if (id > 0) regis_subtask(aaaaaaa[iTest]);
         // Code hàm sinh tại đây
         // Lưu ý: iTest là test thứ i
         // Bạn không được chỉnh sửa các dòng lệnh của chúng tôi đã cho trước vì có thể các dòng lệnh làm gián đoạn quá trình sinh.
@@ -230,7 +230,7 @@ void process_subtask()
     for (int i = 1, j = 1; i <= 10000001 && j <= id; ++i)
         if (i <= name_fold[j].first)
         {
-            a[i] = name_fold[j].second;
+            aaaaaaa[i] = name_fold[j].second;
             if (i == name_fold[j].first) ++j;
         }
 }
@@ -258,7 +258,7 @@ void xem_testcase(void)
         cerr << "--------------------------------------\n";
         return;
     }
-    Gen :: regis(); if (id > 0) regis_subtask(a[iTest]);
+    Gen :: regis(); if (id > 0) regis_subtask(aaaaaaa[iTest]);
     string folder_link = prob_name + "\\" + str(iTest);
     if (subtask != "") folder_link += "_" + subtask;
 
